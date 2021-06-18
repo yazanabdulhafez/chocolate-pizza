@@ -48,6 +48,7 @@
     .beside p:first-child {
       font-family: 'Yellowtail', cursive;
       font-size: 30px;
+      font-weight: bold;
       color: #000;
       padding-bottom: 5px;
     }
@@ -61,7 +62,7 @@
       margin: 0;
       font-size: 12px;
       text-transform: uppercase;
-      color: #4d3e3e;
+      color: grey;
     }
     
     header hr {
@@ -160,8 +161,9 @@
     }
     
     main .feedback {
+      justify-content: center;
       display: flex;
-      justify-content: space-between;
+      gap: 10px;
       margin-top: 20px;
       margin-bottom: 100px;
     }
@@ -177,6 +179,24 @@
       color: grey;
     }
     
+    .feedback div:first-child {
+      width: 71px;
+    }
+    
+    .feedback .flexcont {
+      display: flex;
+      gap: 150px;
+      justify-content: space-between;
+    }
+    
+    .feedback .flexcont div:nth-child(1) {
+      width: 100%;
+    }
+    /*     
+    .feedback .flexcont div:nth-child(1) {
+      width: 100%;
+    } */
+    
     .feedback button {
       width: 200px;
       text-align: center;
@@ -188,13 +208,20 @@
       background: #f44336;
     }
     
+    footer div {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+    }
+    
     footer hr {
       border-top: 6px black;
+      width: 50%;
     }
     
     footer img {
       position: relative;
-      left: 47%;
+      left: 459px;
       transform: translateY(-75%);
       margin-bottom: 15px;
     }
